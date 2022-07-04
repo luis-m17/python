@@ -1,0 +1,14 @@
+echo "# python" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/luis-m17/python.git
+git push -u origin main
+
+def nb_year(p0, percent, aug, p):
+    year = 0 #initialize year count
+    while p0 < p: #evaluate if actual population is smaller than expected population
+        p0 += (p0*(percent/100)) + aug #add population
+        year += 1
+    return year
